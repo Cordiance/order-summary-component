@@ -101,4 +101,16 @@ body .card .cancel :active {
 body .card .attribution {
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+  body .card {
+    width: 375px;
+  }
+  body .card .img img {
+    width: 375px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
