@@ -1,0 +1,106 @@
+$paleblue: hsl(225, 100%, 94%);
+$brightblue: hsl(245, 75%, 52%);
+$verypaleblue:hsl(225, 100%, 98%);
+$desaturatedblue:hsl(224, 23%, 55%);
+$darkblue:hsl(223, 47%, 23%);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    max-height: 1056px;
+
+    .card {
+        max-width: 450px;
+        margin: 20px auto;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px $desaturatedblue;
+
+        .img img {
+            border-radius: 20px 20px 0 0;
+        }
+
+        .order {
+            width: 80%;
+            margin: auto;
+
+            p {
+                color: $desaturatedblue;
+            }
+        }
+
+        .plan {
+            display: grid;
+            grid-auto-flow: column;
+            margin: auto;
+            height: 100px;
+            width: 80%;
+            background-color: $verypaleblue;
+            border-radius: 20px;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+
+            .text {
+                text-align: left;
+
+                h2 {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin-top: 0;
+                    color: $desaturatedblue;
+                }
+            }
+
+            a {
+                margin: auto;
+            }
+        }
+
+        .btn {
+            width: 80%;
+            height: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            background-color: $brightblue;
+            box-shadow: 0 2px 50px $desaturatedblue;
+            border: none;
+
+            a {
+                color: $paleblue;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+
+        .cancel {
+            padding-top: 10px;
+            background-color: $verypaleblue;
+            box-shadow: none;
+
+            a,
+            :active {
+                text-decoration: none;
+                color: $desaturatedblue;
+                font-weight: 600;
+
+            }
+
+        }
+
+
+        .attribution {
+            margin-top: 20px;
+        }
+
+    }
+}
