@@ -2,6 +2,7 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -14,11 +15,12 @@ body {
 
 body .card {
   max-width: 450px;
-  margin: 20px auto;
+  margin: 50px auto;
   border-radius: 20px;
-  -webkit-box-shadow: 0 2px 5px #7280a7;
-          box-shadow: 0 2px 5px #7280a7;
+  -webkit-box-shadow: 0 22px 19px -8px rgba(114, 128, 167, 0.2);
+          box-shadow: 0 22px 19px -8px rgba(114, 128, 167, 0.2);
   background-color: #f5f7ff;
+  border: 0 solid transparent;
 }
 
 body .card .img img {
@@ -28,6 +30,12 @@ body .card .img img {
 body .card .order {
   width: 80%;
   margin: auto;
+}
+
+body .card .order h1 {
+  color: #1f2f56;
+  font-weight: 900;
+  padding-top: 5%;
 }
 
 body .card .order p {
@@ -41,8 +49,8 @@ body .card .plan {
   margin: auto;
   height: 100px;
   width: 80%;
-  background-color: #f5f7ff;
-  border-radius: 20px;
+  background-color: rgba(224, 232, 255, 0.3);
+  border-radius: 12px;
 }
 
 body .card .plan img {
@@ -54,8 +62,10 @@ body .card .plan .text {
   text-align: left;
 }
 
-body .card .plan .text h2 {
+body .card .plan .text h4 {
   margin-bottom: 0;
+  color: #1f2f56;
+  font-weight: 900;
 }
 
 body .card .plan .text p {
@@ -66,6 +76,7 @@ body .card .plan .text p {
 body .card .plan a {
   margin: auto;
   color: #3829e0;
+  font-weight: 700;
 }
 
 body .card .plan a:hover {
@@ -119,18 +130,26 @@ body .card .cancel a:hover {
 }
 
 body .card .attribution {
-  margin-top: 20px;
+  margin-top: 18px;
+  padding-bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+
+body .card .attribution a {
+  color: #3e52a3;
 }
 
 @media only screen and (max-width: 600px) {
   body {
     background-image: url(/images/pattern-background-mobile.svg);
+    width: 375px;
   }
   body .card {
-    width: 375px;
+    width: 90%;
   }
   body .card .img img {
-    width: 375px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
