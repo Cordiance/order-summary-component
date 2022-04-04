@@ -11,26 +11,24 @@ body {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    max-width: 1440px;
-    max-height: 900px;
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-color: $paleblue;
+    background-size: contain;
 
+    /* Card */
     .card {
         max-width: 450px;
-        margin: 50px auto;
+        margin: 100px auto;
         border-radius: 20px;
         box-shadow: 0 22px 19px -8px hsla(224, 23%, 55%, 0.2);
         background-color: $verypaleblue;
-        border: 0 solid transparent;
 
         .img img {
             border-radius: 20px 20px 0 0;
         }
 
+        /* Order */
         .order {
             width: 80%;
             margin: auto;
@@ -46,6 +44,7 @@ body {
             }
         }
 
+        /* Pricing plan */
         .plan {
             display: grid;
             grid-auto-flow: column;
@@ -88,6 +87,7 @@ body {
             }
         }
 
+        /* Buttons */
         .btn {
             width: 80%;
             height: 50px;
@@ -127,6 +127,7 @@ body {
 
         }
 
+        /* Footer */
         .attribution {
             margin-top: 18px;
             padding-bottom: 5px;
@@ -141,6 +142,7 @@ body {
     }
 }
 
+/* Media QUeries */
 @media only screen and (max-width:600px) {
     body {
         background-image: url(/images/pattern-background-mobile.svg);
@@ -148,6 +150,7 @@ body {
 
         .card {
             width: 90%;
+            margin: 30px auto;
 
             .img img {
                 width: 100%;
